@@ -8,6 +8,6 @@ var feedback = function(res) {
 };
 
 new Imgur({
-    clientid: '4409588f10776f7', //You can change this ClientID
+    clientid: '1282a56adf76263', //You can change this ClientID
     callback: feedback
 });
