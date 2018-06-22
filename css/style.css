@@ -13,16 +13,12 @@ body.loading .loading-modal {
 }
 
 .dropzone {
-    border: 4px dashed #ccc;
-    height: 200px;
     position: relative;
     margin-right: auto;
     margin-left: auto;
-    max-width: 50%;
 }
 
 .info {
-    margin-top: 11%;
 }
 
 .dropzone p {

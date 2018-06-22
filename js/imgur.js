@@ -72,15 +72,15 @@
             xhttp = null;
         },
         createDragZone: function () {
-            var p1, p2, input;
+            var img, label, input;
 
-                p1 = this.createEls('p', {}, 'Drop Image File Here');
-                p2 = this.createEls('p', {}, 'Or click here to select image');
+            img = this.createEls('img', {src:'http://localhost:56098/Images/Empty.png'});
+            label = this.createEls('label', {}, 'Upload image');
             input = this.createEls('input', {type: 'file', className: 'input', accept: 'image/*'});
 
             Array.prototype.forEach.call(this.info, function (zone) {
-                zone.appendChild(p1);
-                zone.appendChild(p2);
+                zone.appendChild(img);
+                zone.appendChild(label);
             }.bind(this));
             Array.prototype.forEach.call(this.dropzone, function (zone) {
                 zone.appendChild(input);
